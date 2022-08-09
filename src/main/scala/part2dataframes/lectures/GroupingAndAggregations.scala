@@ -4,7 +4,7 @@ import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions._
 
 
-object AggregationsAndGrouping extends App {
+object GroupingAndAggregations extends App {
 
   val spark = SparkSession.builder()
     .appName("Aggregations and Grouping - Lecture")

@@ -27,7 +27,7 @@ object ColumnsAndExpressions extends App {
 
   moviesDF
     .selectExpr("Title", "Major_Genre", "IMDB_Rating")
-    .where("Major_Genre = 'Comedy' and IMDB_Rating > 6")
+    .where("Major_Genre = 'Comedy' and IMDB_Rating > 6 and true and Major_Genre is not null")
     .show(5)
 
 }
